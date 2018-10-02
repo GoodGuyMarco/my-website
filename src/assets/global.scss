@@ -5,9 +5,9 @@ html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    color: $secondary;
     background: $fourthly;
     background: radial-gradient(circle, $fourthly 0%, $thirdly 100%);
-    color: $secondary;
 }
 
 a {
