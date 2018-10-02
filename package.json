@@ -1,12 +1,14 @@
 {
-  "name": "webpack-react-base",
+  "name": "my-website",
   "version": "1.0.0",
-  "description": "A minimal webpack react setup.",
+  "description": "My website build with ReactJS.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack_dev.config.js",
-    "build": "webpack --config webpack_prod.config.js"
+    "build": "webpack --config webpack_prod.config.js",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://GoodGuyMarco.github.io/my-website",
   "author": "Marco Bartelt",
   "license": "MIT",
   "devDependencies": {
@@ -35,6 +37,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
