@@ -1,0 +1,12 @@
+[ignore]
+.*\.scss
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

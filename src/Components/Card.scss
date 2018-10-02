@@ -1,0 +1,55 @@
+@import '../assets/variables';
+
+.Card {
+    width: 400px;
+    height: 230px;
+    margin: 0 auto;
+    padding: 15px;
+    background: $fifthly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    border-radius: 2px;
+
+    &__title {
+        color: $primary;
+        margin: 0;
+    }
+
+    &__claim {
+        color: $secondary;
+        margin-top: 0;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        a, svg, li {
+            color: #6c757d;
+            fill: #6c757d;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__footer {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        left: 15px;
+        text-align: right;
+    }
+}

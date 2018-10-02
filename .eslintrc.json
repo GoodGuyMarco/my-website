@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  // Prevents: 'document' is not defined  no-undef
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    // Always wrap props in curly braces
+    "react/jsx-curly-brace-presence": "always",
+    // Component should be written as a pure function  react/prefer-stateless-function
+    "react/prefer-stateless-function": "warn"
+  }
+}
