@@ -1,0 +1,71 @@
+.Divider {
+  border: none;
+  border-bottom: 1px dotted #D1DBBD;
+  margin-bottom: 15px; }
+
+.Icon {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  fill: #3E606F; }
+  .Icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px; }
+
+.Card {
+  width: 400px;
+  height: 230px;
+  margin: 0 auto;
+  padding: 15px;
+  background: #FCFFF5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2px; }
+  .Card__title {
+    color: #193441;
+    margin: 0; }
+  .Card__claim {
+    color: #3E606F;
+    margin-top: 0; }
+  .Card__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .Card__list a, .Card__list svg, .Card__list li {
+      color: #6c757d;
+      fill: #6c757d; }
+    .Card__list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      font-size: 14px; }
+    .Card__list i {
+      margin-right: 5px; }
+  .Card__footer {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    text-align: right; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: #D1DBBD;
+  background: radial-gradient(circle, #D1DBBD 0%, #91AA9D 100%);
+  color: #3E606F; }
+
+a {
+  text-decoration: none;
+  color: #3E606F; }
+
