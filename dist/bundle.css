@@ -61,9 +61,9 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: #3E606F;
   background: #D1DBBD;
-  background: radial-gradient(circle, #D1DBBD 0%, #91AA9D 100%);
-  color: #3E606F; }
+  background: radial-gradient(circle, #D1DBBD 0%, #91AA9D 100%); }
 
 a {
   text-decoration: none;
