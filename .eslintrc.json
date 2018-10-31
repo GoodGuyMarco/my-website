@@ -14,8 +14,6 @@
       }
     ],
     // Always wrap props in curly braces
-    "react/jsx-curly-brace-presence": "always",
-    // Component should be written as a pure function  react/prefer-stateless-function
-    "react/prefer-stateless-function": "warn"
+    "react/jsx-curly-brace-presence": "always"
   }
 }
