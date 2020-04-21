@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #193441;
+    --secondary: #3E606F;
+    --thirdly: #91AA9D;
+    --fourthly: #D1DBBD;
+    --fifthly: #FCFFF5;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--secondary);
+}
+
+#___gatsby, #gatsby-focus-wrapper {
+    height: 100%;
+}
