@@ -28,13 +28,7 @@ const IndexPage = () => (
           </li>
           <li className="flex items-center mb-2">
             <Code className="w-5 h-5 mr-2" />
-            <a href="https://www.pro-volution.de"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Current employer"
-            >
-              pro.volution GmbH
-            </a>
+            CHECK24 Vergleichsportal Hotel GmbH
           </li>
           <li className="flex items-center">
             <Marker className="w-5 h-5 mr-2" />
