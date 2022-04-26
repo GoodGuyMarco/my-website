@@ -76,11 +76,11 @@ const IndexPage = () => (
     </section>
     <section
       id="my-work"
-      className="relative h-full flex flex-col justify-center items-center"
+      className="relative min-h-screen flex flex-col justify-center items-center px-4 pt-4 pb-32"
     >
-      <div>
-        <h2 className="block text-4xl mb-10 font-semibold">My work</h2>
-        <div className="w-96">
+      <div className="md:w-96 w-full">
+        <h2 className="block text-4xl my-10 font-semibold">My work</h2>
+        <div>
           <h3 className="font-semibold mb-1">ApplyHigh</h3>
           <p className="mb-2 text-secondary">
             Together with three fellow students from university we developed a
@@ -96,7 +96,7 @@ const IndexPage = () => (
           </a>
         </div>
         <hr className="my-8" />
-        <div className="w-96">
+        <div>
           <h3 className="font-semibold mb-1">Smart & Simple</h3>
           <p className="mb-2 text-secondary">
             After successfully launching an online platform (ApplyHigh) we
@@ -113,7 +113,7 @@ const IndexPage = () => (
           </a>
         </div>
         <hr className="my-8" />
-        <div className="w-96">
+        <div>
           <h3 className="font-semibold mb-1">Landhaus Edelweiss</h3>
           <p className="mb-2 text-secondary">
             A website showcasing a beautiful house in Austria with two bookable
@@ -138,7 +138,7 @@ const IndexPage = () => (
     </section>
     <section
       id="contact-me"
-      className="h-full flex flex-col justify-center items-center bg-gray-200"
+      className="h-full flex flex-col justify-center items-center bg-gray-200 text-center"
     >
       <h2 className="block text-4xl mb-2">
         Want to <span className="font-semibold">talk</span>?
