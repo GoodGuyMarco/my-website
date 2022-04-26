@@ -8,12 +8,13 @@ import Code from "../svgs/terminal-light.svg";
 import Marker from "../svgs/map-marker-alt-light.svg";
 import GitHub from "../svgs/github-brands.svg";
 import Xing from "../svgs/xing-brands.svg";
+import LinkedIn from "../svgs/linkedin.svg";
 import ArrowDown from "../svgs/arrow-down-light.svg";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Business Card" />
-    <section className="h-full flex justify-center items-center bg-gray-300">
+    <section className="h-full flex justify-center items-center bg-gray-200">
       <div className="w-full max-w-md p-4 mx-2 overflow-hidden rounded shadow-lg bg-white">
         <h1 className="mb-4 leading-none">
           <span className="block text-3xl font-bold mb-1">Marco Bartelt</span>
@@ -29,7 +30,7 @@ const IndexPage = () => (
           </li>
           <li className="flex items-center mb-2">
             <Code className="w-5 h-5 mr-2" />
-            CHECK24 Vergleichsportal Hotel GmbH
+            ABS Safety GmbH
           </li>
           <li className="flex items-center">
             <Marker className="w-5 h-5 mr-2" />
@@ -47,6 +48,15 @@ const IndexPage = () => (
             <GitHub height={20} />
           </a>
           <a
+            className="inline-block mr-2"
+            href="https://www.linkedin.com/in/marco-bartelt-4839b9233"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="My LinkedIn profile"
+          >
+            <LinkedIn height={20} />
+          </a>
+          <a
             className="inline-block"
             href="https://www.xing.com/profile/Marco_Bartelt2"
             target="_blank"
@@ -58,7 +68,69 @@ const IndexPage = () => (
         </div>
       </div>
       <a
-        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white mb-4 transition duration-200 transform hover:scale-110"
+        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white border-2 border-secondary mb-8 transition duration-200 transform hover:scale-110"
+        href="#my-work"
+      >
+        <ArrowDown className="h-6 w-6" />
+      </a>
+    </section>
+    <section
+      id="my-work"
+      className="relative h-full flex flex-col justify-center items-center"
+    >
+      <div>
+        <h2 className="block text-4xl mb-10 font-semibold">My work</h2>
+        <div className="w-96">
+          <h3 className="font-semibold mb-1">ApplyHigh</h3>
+          <p className="mb-2 text-secondary">
+            Together with three fellow students from university we developed a
+            project that simplifies the creation of job applications.
+          </p>
+          <a
+            href="https://www.apply-high.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            https://www.apply-high.de
+          </a>
+        </div>
+        <hr className="my-8" />
+        <div className="w-96">
+          <h3 className="font-semibold mb-1">Smart & Simple</h3>
+          <p className="mb-2 text-secondary">
+            After successfully launching an online platform (ApplyHigh) we
+            decided to found a business that develops software services for
+            customers.
+          </p>
+          <a
+            href="https://www.smart-and-simple.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            https://www.smart-and-simple.de
+          </a>
+        </div>
+        <hr className="my-8" />
+        <div className="w-96">
+          <h3 className="font-semibold mb-1">Landhaus Edelweiss</h3>
+          <p className="mb-2 text-secondary">
+            A website showcasing a beautiful house in Austria with two bookable
+            holiday homes for your perfect holiday in the Austrian mountains.
+          </p>
+          <a
+            href="https://www.landhaus-edelweiss-oetz.at"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            https://www.landhaus-edelweiss-oetz.at
+          </a>
+        </div>
+      </div>
+      <a
+        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white border-2 border-secondary mb-8 transition duration-200 transform hover:scale-110"
         href="#contact-me"
       >
         <ArrowDown className="h-6 w-6" />
@@ -66,15 +138,17 @@ const IndexPage = () => (
     </section>
     <section
       id="contact-me"
-      className="h-full flex flex-col justify-center items-center"
+      className="h-full flex flex-col justify-center items-center bg-gray-200"
     >
-      <h2 className="block text-4xl">
-        Need a <span className="font-semibold text-blue-600">website</span>?
+      <h2 className="block text-4xl mb-2">
+        Want to <span className="font-semibold">talk</span>?
       </h2>
-      <p className="mb-4">Or know someone who needs one.</p>
+      <p className="mb-4 text-secondary">
+        Feel free to contact me for business purposes.
+      </p>
       <a
         href="mailto:marco.bartelt94@gmail.com"
-        className="bg-white py-2 px-4 border border-blue-600 text-blue-600 font-semibold rounded cursor-pointer transition duration-200 transform hover:scale-105"
+        className="bg-white py-2 px-4 border-2 border-primary font-semibold rounded cursor-pointer transition duration-200 transform hover:scale-105"
       >
         Contact me
       </a>
