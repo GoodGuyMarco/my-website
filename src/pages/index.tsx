@@ -68,7 +68,8 @@ const IndexPage = () => (
         </div>
       </div>
       <a
-        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white border-2 border-secondary mb-8 transition duration-200 transform hover:scale-110"
+        aria-label="See my work"
+        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white border-2 border-primary mb-8 transition duration-200 transform hover:scale-110"
         href="#my-work"
       >
         <ArrowDown className="h-6 w-6" />
@@ -130,7 +131,8 @@ const IndexPage = () => (
         </div>
       </div>
       <a
-        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white border-2 border-secondary mb-8 transition duration-200 transform hover:scale-110"
+        aria-label="See my contact information"
+        className="absolute bottom-0 rounded-full h-12 w-12 flex items-center justify-center bg-white border-2 border-primary mb-8 transition duration-200 transform hover:scale-110"
         href="#contact-me"
       >
         <ArrowDown className="h-6 w-6" />
