@@ -15,57 +15,69 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Business Card" />
     <section className="h-full flex justify-center items-center bg-gray-200">
-      <div className="w-full max-w-md p-4 mx-2 overflow-hidden rounded shadow-lg bg-white">
-        <h1 className="mb-4 leading-none">
-          <span className="block text-3xl font-bold mb-1">Marco Bartelt</span>
-          <span className="block text-base">Software Engineer</span>
-        </h1>
-        <hr className="mb-4 border-dotted" />
-        <ul className="mb-4">
-          <li className="flex items-center mb-2">
-            <Envelope className="w-5 h-5 mr-2" />
-            <a href="mailto:marco.bartelt94@gmail.com">
-              marco.bartelt94@gmail.com
+      <div className="flex flex-col items-center">
+        <div className="w-96 p-4 overflow-hidden rounded shadow-lg bg-white">
+          <h1 className="mb-4 leading-none">
+            <span className="block text-3xl font-bold mb-1">Marco Bartelt</span>
+            <span className="block text-base">Software Engineer</span>
+          </h1>
+          <hr className="mb-4 border-dotted" />
+          <ul className="mb-4">
+            <li className="flex items-center mb-2">
+              <Envelope className="w-5 h-5 mr-2" />
+              <a href="mailto:marco.bartelt94@gmail.com">
+                marco.bartelt94@gmail.com
+              </a>
+            </li>
+            <li className="flex items-center mb-2">
+              <Code className="w-5 h-5 mr-2" />
+              Atos Information Technology GmbH
+            </li>
+            <li className="flex items-center">
+              <Marker className="w-5 h-5 mr-2" />
+              Essen, Germany
+            </li>
+          </ul>
+          <div className="text-right">
+            <a
+              className="inline-block mr-2"
+              href="https://github.com/GoodGuyMarco"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="My GitHub profile"
+              title="Visit my GitHub profile"
+            >
+              <GitHub height={20} />
             </a>
-          </li>
-          <li className="flex items-center mb-2">
-            <Code className="w-5 h-5 mr-2" />
-            ABS Safety GmbH
-          </li>
-          <li className="flex items-center">
-            <Marker className="w-5 h-5 mr-2" />
-            Essen, Germany
-          </li>
-        </ul>
-        <div className="text-right">
-          <a
-            className="inline-block mr-2"
-            href="https://github.com/GoodGuyMarco"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="My GitHub profile"
-          >
-            <GitHub height={20} />
-          </a>
-          <a
-            className="inline-block mr-2"
-            href="https://www.linkedin.com/in/marco-bartelt-4839b9233"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="My LinkedIn profile"
-          >
-            <LinkedIn height={20} />
-          </a>
-          <a
-            className="inline-block"
-            href="https://www.xing.com/profile/Marco_Bartelt2"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="My Xing profile"
-          >
-            <Xing height={20} />
-          </a>
+            <a
+              className="inline-block mr-2"
+              href="https://www.linkedin.com/in/marco-bartelt-4839b9233"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="My LinkedIn profile"
+              title="Visit my LinkedIn profile"
+            >
+              <LinkedIn height={20} />
+            </a>
+            <a
+              className="inline-block"
+              href="https://www.xing.com/profile/Marco_Bartelt2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="My Xing profile"
+              title="Visit my Xing profile"
+            >
+              <Xing height={20} />
+            </a>
+          </div>
         </div>
+        <a
+          href="Marco-Bartelt-CV.pdf"
+          className="underline underline-offset-4 mt-4"
+          download
+        >
+          Download my CV
+        </a>
       </div>
       <a
         aria-label="See my work"
@@ -98,23 +110,6 @@ const IndexPage = () => (
         </div>
         <hr className="my-8" />
         <div>
-          <h3 className="font-semibold mb-1">Smart & Simple</h3>
-          <p className="mb-2 text-secondary">
-            After successfully launching an online platform (ApplyHigh) we
-            decided to found a business that develops software services for
-            customers.
-          </p>
-          <a
-            href="https://www.smart-and-simple.de"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4"
-          >
-            https://www.smart-and-simple.de
-          </a>
-        </div>
-        <hr className="my-8" />
-        <div>
           <h3 className="font-semibold mb-1">Landhaus Edelweiss</h3>
           <p className="mb-2 text-secondary">
             A website showcasing a beautiful house in Austria with two bookable
@@ -127,6 +122,23 @@ const IndexPage = () => (
             className="underline underline-offset-4"
           >
             https://www.landhaus-edelweiss-oetz.at
+          </a>
+        </div>
+        <hr className="my-8" />
+        <div>
+          <h3 className="font-semibold mb-1">Open Source</h3>
+          <p className="mb-2 text-secondary">
+            In my daily work I'm using lots of open source projects by other
+            developers. I'm participating with reproduction repositories and
+            code contributions.
+          </p>
+          <a
+            href="https://github.com/GoodGuyMarco"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            https://github.com/GoodGuyMarco
           </a>
         </div>
       </div>
@@ -148,12 +160,14 @@ const IndexPage = () => (
       <p className="mb-4 text-secondary">
         Feel free to contact me for business purposes.
       </p>
-      <a
-        href="mailto:marco.bartelt94@gmail.com"
-        className="bg-white py-2 px-4 border-2 border-primary font-semibold rounded cursor-pointer transition duration-200 transform hover:scale-105"
-      >
-        Contact me
-      </a>
+      <div>
+        <a
+          href="mailto:marco.bartelt94@gmail.com"
+          className="bg-white py-2 px-4 border-2 border-primary font-semibold rounded cursor-pointer transition duration-200 transform hover:scale-105"
+        >
+          Contact me
+        </a>
+      </div>
     </section>
   </Layout>
 );
