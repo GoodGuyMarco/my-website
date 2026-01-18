@@ -31,11 +31,11 @@ const IndexPage = () => (
             </li>
             <li className="flex items-center mb-2">
               <Code className="w-5 h-5 mr-2" />
-              Atos Information Technology GmbH
+              codecentric AG
             </li>
             <li className="flex items-center">
               <Marker className="w-5 h-5 mr-2" />
-              Essen, Germany
+              Münster, Germany
             </li>
           </ul>
           <div className="text-right">
@@ -106,22 +106,6 @@ const IndexPage = () => (
             className="underline underline-offset-4"
           >
             https://www.apply-high.de
-          </a>
-        </div>
-        <hr className="my-8" />
-        <div>
-          <h3 className="font-semibold mb-1">Landhaus Edelweiss</h3>
-          <p className="mb-2 text-secondary">
-            A website showcasing a beautiful house in Austria with two bookable
-            holiday homes for your perfect holiday in the Austrian mountains.
-          </p>
-          <a
-            href="https://www.landhaus-edelweiss-oetz.at"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4"
-          >
-            https://www.landhaus-edelweiss-oetz.at
           </a>
         </div>
         <hr className="my-8" />
